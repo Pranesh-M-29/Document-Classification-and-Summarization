@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarization Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_summarize.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Summarization Result</h1>
+
+    <h2>Original Text</h2>
+    <p>{{ original_text }}</p>
+
+    <h2>Summarized Text</h2>
+    <p>{{ summary }}</p>
+
+    <a href="{{ url_for('upload_page') }}">Summarize another document</a>
+</body>
+</html>

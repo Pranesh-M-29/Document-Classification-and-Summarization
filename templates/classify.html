@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_classify.css') }}">
+</head>
+<body>
+    <div class="classify-container">
+        <h2>Text Classification Result</h2>
+        <div class="result">
+            <p>The predicted category is: <strong>{{ category }}</strong>.</p>
+        </div>
+        <button onclick="location.href='/'">Back to Home</button>
+    </div>
+    <button onclick="location.href='{{ url_for('upload_page') }}'">Classify another document</button>
+
+</body>
+</html>

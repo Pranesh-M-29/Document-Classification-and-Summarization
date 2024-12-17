@@ -1,0 +1,79 @@
+/* General settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    padding: 20px;
+    overflow-y: auto;
+    flex-direction: column;
+}
+
+/* Container styling */
+.classify-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.classify-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+h2 {
+    margin-bottom: 20px;
+    color: #34495e;
+    font-size: 28px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* Result block styling */
+.result {
+    background-color: #f9fbfd;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    font-size: 16px;
+    color: #2c3e50;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result p {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #2e4053;
+    line-height: 1.6;
+}
+
+/* Button styling */
+button, .classify-btn, .back-home-btn {
+    display: inline-block;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;

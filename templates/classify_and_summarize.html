@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification and Summarization Result</title>
+</head>
+<body>
+    <h1>Classification and Summarization Result</h1>
+
+    <h2>Classification Result</h2>
+    <p>The predicted category is: {{ category }}</p>
+
+    <h2>Summarization Result</h2>
+    <p>{{ summary }}</p>
+
+    <a href="{{ url_for('upload_page') }}">Classify and Summarize another document</a>
+</body>
+</html>

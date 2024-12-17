@@ -1,0 +1,105 @@
+/* Body and layout settings for upload page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.upload-container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Header styles */
+h2 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Form group and label for upload */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Input fields and textarea styling for upload */
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #5cb85c;
+    outline: none;
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Add responsiveness */
+@media (max-width: 600px) {
+    .upload-container {
+        padding: 30px 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    input[type="submit"] {
+        font-size: 15px;
+    }
+}

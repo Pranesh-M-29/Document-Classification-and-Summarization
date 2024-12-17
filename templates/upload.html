@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_upload.css') }}">
+    <title>Upload Document</title>
+</head>
+<body>
+    <h2>Upload or Enter Document</h2>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <label for="file">Upload a document:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+
+        <label for="text">Or enter text:</label><br>
+        <textarea id="text" name="text" rows="5" cols="40"></textarea><br><br>
+
+        <label for="action">Choose an action:</label><br>
+        <select id="action" name="action" required>
+            <option value="classify">Classify</option>
+            <option value="summarize">Summarize</option>
+            <option value="both">Classify & Summarize</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
